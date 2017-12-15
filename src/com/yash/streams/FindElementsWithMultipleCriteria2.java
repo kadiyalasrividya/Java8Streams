@@ -20,7 +20,8 @@ public class FindElementsWithMultipleCriteria2 {
         System.out.println(number);
     }
 
-    public static Predicate<String> criteria(final String letter){
+    public static Predicate<String> criteria(final String letter)
+    {
         return name -> name.startsWith(letter);
     }
 }

@@ -29,7 +29,8 @@ public class FileListing {
         System.out.println(file);*/
 
         //return selected file
-        Files.newDirectoryStream(Paths.get("."), path -> path.toString().endsWith(".java")).forEach(System.out::println);
+        Files.newDirectoryStream(Paths.get("."),
+                path -> path.toString().endsWith(".java")).forEach(System.out::println);
 
         //return hidden files
         File[] file = new File(".").listFiles(File::isHidden);

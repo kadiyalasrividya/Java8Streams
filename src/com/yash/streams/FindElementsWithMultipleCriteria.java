@@ -12,7 +12,7 @@ public class FindElementsWithMultipleCriteria {
         System.out.println(tPack);
     }
 
-    public static Predicate<String> criteria(final String letter){
+    public static Predicate<String> criteria(final String letter) {
         return name -> name.startsWith(letter);
     }
 }
